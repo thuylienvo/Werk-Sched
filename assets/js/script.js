@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log('Hello! Y you no worky')
+    console.log('hello')
     
     //Variables 
     let timeEL = $('.time-block');
@@ -10,7 +10,7 @@ $(document).ready(function() {
         console.log(currentDayEl);
 
     function saveTask() {
-        console.log($(this))
+        alert($(this));
     };
 
     $('.saveBtn').on('click', saveTask);
