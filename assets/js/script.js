@@ -1,17 +1,20 @@
-$(document).ready(function() {
-    console.log('hello')
-    
-    //Variables 
-    let timeEL = $('.time-block');
-    let currentDayEl = $('#currentDay');
+// WORK SCHEDULE LOGIC 
 
-    //Date 
-    currentDayEl.text(moment().format('LLLL'))
-        console.log(currentDayEl);
+//SCHEDULE LOGIC 
 
-    function saveTask() {
-        alert($(this));
-    };
+// VARIABLES
+let timeEL = document.querySelector('.time-block')
+let currentDayEl = document.querySelector('#currentDay')
 
-    $('.saveBtn').on('click', saveTask);
-})
+
+//When I load the page
+//
+currentDayEl.textContent = moment().format('LLLL');
+console.log(currentDayEl);
+
+//Saving a task
+function saveTask() {
+    console.log(this)
+};
+
+document.querySelector('.saveBtn').addEventListener('click', saveTask);

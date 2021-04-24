@@ -19,6 +19,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+      </style>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,38 +33,104 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row time-block 800">
-        <div class="time">8:00</div>
-        <input class="task"></input>
-        <button class="saveBtn">Save</button>
-      </div>
-      <div class="time-block 830">8:30</div>
-      <div class="time-block 900">9:00</div>
-      <div class="time-block 930">9:30</div>
-      <div class="time-block 1000">10:00</div>
-      <div class="time-block 1030">10:30</div>
-      <div class="time-block 1100">11:00</div>
-      <div class="time-block 1130">11:30</div>
-      <div class="time-block 1200">12:00</div>
-      <div class="time-block 1230">12:30</div>
-      <div class="time-block 1300">13:00</div>
-      <div class="time-block 1330">13:30</div>
-      <div class="time-block 1400">14:00</div>
-      <div class="time-block 1430">14:30</div>
-      <div class="time-block 1500">15:00</div>
-      <div class="time-block 1530">15:30</div>
-      <div class="time-block 1600">16:00</div>
-      <div class="time-block 1630">16:30</div>
-      <div class="time-block 1700">17:00</div>
-      <div class="time-block 1730">17:30</div>
-      <div class="time-block 1800">18:00</div>
-      <div class="time-block 1830">18:30</div>
-      <div class="time-block 1900">19:00</div>
-      <div class="time-block 1930">19:30</div>
-      <div class="time-block 2000">20:00</div>
-      <div class="time-block 2030">20:30</div>
-      <div class="time-block 2100">21:00</div>
-      <div class="time-block 2130">21:30</div>
+      <div class="time-rows">
+        <table class="row time-block">
+          <tr>
+            <td class="time row-1">8:00am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-2">8:30am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-3">9:00am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-4">9:30am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-5">10:00am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-6">10:30am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-7">11:00am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-8">11:30am</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-9">12:00pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-10">12:30pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-11">1:00pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-12">1:30pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-13">2:00pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-14">2:30pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-15">3:00pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-16">3:30pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-17">4:00pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-18">4:30pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <td class="time row-19">5:00pm</td> 
+            <td><input class="task"></input></td>
+            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
+          </tr>
+        </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

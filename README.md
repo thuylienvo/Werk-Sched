@@ -1,4 +1,4 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler 
 
 ## Introduction
 A schedule application geared toward users with a busy schedule to be able to manage their time more effectively. 
