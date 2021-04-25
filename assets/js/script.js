@@ -38,6 +38,33 @@ function futureTime(timeEL, currentTime, currentBlock) {
 
 //SAVE TASK 
 
+let taskEl = document.querySelector('#task');
+let saveBtnEl = document.querySelector('saveBtn');
+
+$(".saveBtn").click(function() {
+
+    taskEl.addEventListener('input', letter => {
+        console.log(letter.target.value)
+        textEl.textContent = letter.target.value    
+    }
+     
+    )
+
+    //localStorage.setItem("taskInput", JSON.stringify ("#task");
+    //console.log(localStorage)
+
+    // let taskSaved = localStorage.getItem(taskEL);
+    // localStorage.setItem(taskSaved, 'saved');
+    // console.log(taskSaved);
+    // alert( "this has been saved!" );
+  });
+
+// let taskEL = document.querySelector('#task');
+// localStorage.setItem(taskEL, 'taskInput');
+
+// let taskSaved = localStorage.getItem(taskEL);
+// localStorage.setItem(taskSaved, 'saved');
+// console.log(taskSaved);
 
 
 $(document).ready(function(){
