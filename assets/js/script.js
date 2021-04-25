@@ -6,6 +6,7 @@ function timeToSeconds(time) {
     return time[0] * 3600 + time[1] * 60;
 };
 
+
 let currentTime = new Date().getHours() * 3600 +  new Date().getMinutes() * 60;
 console.log(currentTime);
 
@@ -14,15 +15,15 @@ function validateTime(timeEL, currentTime, currentBlock) {
     if (timeEL < currentTime) {
         document.querySelector('.task-input')
         console.log('this is past time');
-        currentBlock.parentNode.style.backgroundColor='grey';
+        currentBlock.parentNode.style.backgroundColor='lightgrey';
     } else if ((timeEL /3600)== new Date().getHours()) {
         document.querySelector('.task-input')
         console.log('this is present time');
-        currentBlock.parentNode.style.backgroundColor='orange';
+        currentBlock.parentNode.style.backgroundColor='red';
     } else if (timeEL > currentTime) {
         document.querySelector('.task-input')
         console.log('this is future time');
-        currentBlock.parentNode.style.backgroundColor='blue';
+        currentBlock.parentNode.style.backgroundColor='green';
         
     }
 };
@@ -81,11 +82,12 @@ $(document).ready(function(){
         console.log(currentBlock.length);
         let timeBlock = timeToSeconds(currentBlock[i].innerText);
 
+
         validateTime(timeBlock, currentTime, currentBlock[i]);
         saveStorage();
     }
 
     //TODAY'S DATE 
-    currentDayEl.text(moment().format('LLLL'));
+    currentDayEl.text(moment().format('LLL'));
         console.log(currentDayEl);
 })

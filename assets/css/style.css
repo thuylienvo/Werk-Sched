@@ -22,10 +22,10 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-image: url("/assets/images/background.jpeg");
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #BCCEE2;
 }
 
 .description{
@@ -76,7 +76,7 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #B2AC88;
   color: white;
   display: flex;
   align-items: center;
