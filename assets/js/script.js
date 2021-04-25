@@ -9,55 +9,56 @@ function timeToSeconds(time) {
 let currentTime = new Date().getHours() * 3600 +  new Date().getMinutes() * 60;
 console.log(currentTime);
 
-//PAST TIME BLOCK
-function pastTime(timeEL, currentTime, currentBlock) {
-    if (timeEL <= currentTime) {
+
+function validateTime(timeEL, currentTime, currentBlock) {
+    if (timeEL < currentTime) {
         document.querySelector('.task-input')
         console.log('this is past time');
         currentBlock.parentNode.style.backgroundColor='grey';
-    }
-}
-
-//PRESENT TIME BLOCK
-function presentTime(timeEL, currentTime, currentBlock) {
-    if (timeEL === currentTime) {
+    } else if ((timeEL /3600)== new Date().getHours()) {
         document.querySelector('.task-input')
         console.log('this is present time');
         currentBlock.parentNode.style.backgroundColor='orange';
-    }
-}
-
-//FUTURE TIME BLOCK
-function futureTime(timeEL, currentTime, currentBlock) {
-    if (timeEL >= currentTime) {
+    } else if (timeEL > currentTime) {
         document.querySelector('.task-input')
         console.log('this is future time');
         currentBlock.parentNode.style.backgroundColor='blue';
+        
     }
-}
+};
+
+
 
 //SAVE TASK 
+function saveStorage() {
+    let userInput = $(this).siblings('.description').val() 
+    var localStorageKey = $(this).siblings('.hour').text()
+    localStorage.setItem(localStorageKey, userInput)
+    
+ }
 
-let taskEl = document.querySelector('#task');
-let saveBtnEl = document.querySelector('saveBtn');
 
-$(".saveBtn").click(function() {
+// let taskEl = document.querySelector('#task');
+// let saveBtnEl = document.querySelector('saveBtn');
 
-    taskEl.addEventListener('input', letter => {
-        console.log(letter.target.value)
-        textEl.textContent = letter.target.value    
-    }
+// $(".saveBtn").click(function() {
+
+//     taskEl.addEventListener('input', letter => {
+//         console.log(letter.target.value)
+//         textEl.textContent = letter.target.value    
+//     }
      
-    )
+//     )
 
-    //localStorage.setItem("taskInput", JSON.stringify ("#task");
-    //console.log(localStorage)
 
-    // let taskSaved = localStorage.getItem(taskEL);
-    // localStorage.setItem(taskSaved, 'saved');
-    // console.log(taskSaved);
-    // alert( "this has been saved!" );
-  });
+//     //localStorage.setItem("taskInput", JSON.stringify.("#task");
+//     //console.log(localStorage)
+
+//     let taskSaved = localStorage.getItem(taskEL);
+//     localStorage.setItem(taskSaved, 'saved');
+//     console.log(taskSaved);
+//     alert("this has been saved!");
+//   });
 
 // let taskEL = document.querySelector('#task');
 // localStorage.setItem(taskEL, 'taskInput');
@@ -68,7 +69,6 @@ $(".saveBtn").click(function() {
 
 
 $(document).ready(function(){
-    //console.log('Hello! Y you no worky');
     
     //VARIABLES 
     let currentBlock = $(".hour");
@@ -81,9 +81,8 @@ $(document).ready(function(){
         console.log(currentBlock.length);
         let timeBlock = timeToSeconds(currentBlock[i].innerText);
 
-        pastTime(timeBlock, currentTime, currentBlock[i]);
-        futureTime(timeBlock, currentTime, currentBlock[i]);
-        presentTime(timeBlock, currentTime, currentBlock[i]);
+        validateTime(timeBlock, currentTime, currentBlock[i]);
+        saveStorage();
     }
 
     //TODAY'S DATE 
