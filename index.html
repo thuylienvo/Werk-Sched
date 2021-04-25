@@ -33,78 +33,66 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <table class="table">
-      <thead>
-        <tr>
-          <th scope="col-sm-2">Time</th>
-          <th scope="col-sm-10">Task</th>
-          <th scope="col-sm-1">Save</th>
-        </tr>
-       </thead> 
-        <tbody>
-          <tr>
-            <td scope="row" class="time row-1">8:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">9:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">10:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">11:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">12:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">13:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">14:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">15:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-
-          <tr>
-            <td scope="row" class="time row-1">16:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">17:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">18:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-          <tr>
-            <td scope="row" class="time row-1">19:00</td>
-            <td><input type="text" class="col-sm-10 task-input task"></input></td>
-            <td><button class="saveBtn"><i class="far fa-save"></i></button></td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="1" class="row time-block">
+        <div class="col-sm-1 border hour"><p>1:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>
+      <div id="1" class="row time-block">
+        <div class="col-sm-1 border hour"><p>2:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>
+      <div id="1" class="row time-block">
+        <div class="col-sm-1 border hour"><p>8:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>
+      <div id="2" class="row time-block">
+        <div class="col-sm-1 border hour"><p>9:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>
+      <div id="3" class="row time-block">
+        <div class="col-sm-1 border hour"><p>10:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="4" class="row time-block">
+        <div class="col-sm-1 border hour"><p>11:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="5" class="row time-block">
+        <div class="col-sm-1 border hour"><p>12:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="6" class="row time-block">
+        <div class="col-sm-1 border hour"><p>13:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="7" class="row time-block">
+        <div class="col-sm-1 border hour"><p>14:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="8" class="row time-block">
+        <div class="col-sm-1 border hour"><p>15:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="9" class="row time-block">
+        <div class="col-sm-1 border hour"><p>16:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
+      <div id="10" class="row time-block">
+        <div class="col-sm-1 border hour"><p>17:00</p></div>
+        <textarea class="col-sm-10 border description" id="task"></textarea>
+        <button class="saveBtn col-sm-1"><i class="far fa-save fa-2x"></i></button>
+      </div>      
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

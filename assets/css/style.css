@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -19,47 +20,22 @@ textarea{
   padding: 10px;
 }
 
-
-.lead {
-  font-size: 1.75rem;
-  font-weight: 300;
-}
-
 .jumbotron {
   text-align: center;
-  background-color: white;
+  background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid #828c99;
-}
-
-/*.container { 
-  display: grid; 
-  grid-template-areas: "time-block" "task" "saveBtn";
-  grid-template-columns: auto;
-  grid-template-rows: 60px;
-  width: 95vw;
-  height: 95vw;
-  margin: 0 auto;
-}*/
-
-table {
-  width: 800px;
+  border-bottom: 10px solid black;
 }
 
 .description{
   white-space: pre-wrap;
+  border: #d3d3d3;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
-}
-.time {
-  top: 30%;
-  text-align: center;
-  font-size: 28px;
-  color: #ffffff;
 }
 
 .row {
@@ -69,9 +45,14 @@ table {
 }
 
 .hour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  border-left: 0 !important;
+  font-size: 24px;
 }
 
 .past {
@@ -93,8 +74,11 @@ table {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #828c99;
+  background-color: #06AED5;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .saveBtn i:hover {

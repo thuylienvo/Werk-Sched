@@ -22,8 +22,8 @@ function pastTime(timeEL, currentTime, currentBlock) {
 function presentTime(timeEL, currentTime, currentBlock) {
     if (timeEL === currentTime) {
         document.querySelector('.task-input')
-        console.log('this is future time');
-        currentBlock.parentNode.style.backgroundColor='yellow';
+        console.log('this is present time');
+        currentBlock.parentNode.style.backgroundColor='orange';
     }
 }
 
@@ -32,7 +32,7 @@ function futureTime(timeEL, currentTime, currentBlock) {
     if (timeEL >= currentTime) {
         document.querySelector('.task-input')
         console.log('this is future time');
-        currentBlock.parentNode.style.backgroundColor='green';
+        currentBlock.parentNode.style.backgroundColor='blue';
     }
 }
 
@@ -44,9 +44,10 @@ $(document).ready(function(){
     //console.log('Hello! Y you no worky');
     
     //VARIABLES 
-    let currentBlock = $(".time");
-    let timeEL = $('.time-block');
+    let currentBlock = $(".hour");
+    let timeEL = $('.hour-block');
     let currentDayEl = $('#currentDay');
+    let hourEl = $('tr');
 
     for (let i = 0; i < currentBlock.length; i++) {
         console.log(i);
@@ -55,6 +56,7 @@ $(document).ready(function(){
 
         pastTime(timeBlock, currentTime, currentBlock[i]);
         futureTime(timeBlock, currentTime, currentBlock[i]);
+        presentTime(timeBlock, currentTime, currentBlock[i]);
     }
 
     //TODAY'S DATE 
