@@ -30,24 +30,13 @@ function validateTime(timeEL, currentTime, currentBlock) {
 
 
 //SAVE TASK 
-function saveStorage() {
-    let userInput = $(this).siblings('.task-input').val() 
-    var localStorageKey = $(this).siblings('.hour').text()
-    localStorage.setItem(localStorageKey, userInput)
+function saveStorage(button) {
+    let userInput = $(button).siblings(".task-input").val();
+    var localStorageKey = $(this).siblings("#task-input").text();
+    localStorage.setItem(localStorageKey, userInput);
     console.log("saveStorage");
-    console.log(this);
- }
-
-// function saveStorage() {
-//     localStorage.setItem("task-input", task-input);
-//     console.log('setItem');
-//     console.log(task-input); 
-//   }
-  
-//   function readValue() {
-//     var x = localStorage.getItem("mytime");
-//     document.getElementById(".task-input").innerHTML = x;
-//   }
+    console.log(userInput);
+  }
 
 
 $(document).ready(function(){
