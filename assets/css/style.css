@@ -28,7 +28,7 @@ textarea{
   border-bottom: 10px solid #BCCEE2;
 }
 
-.description{
+.task-input{
   white-space: pre-wrap;
   border: #d3d3d3;
   font-size: 24px;

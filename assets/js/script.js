@@ -29,44 +29,25 @@ function validateTime(timeEL, currentTime, currentBlock) {
 };
 
 
-
 //SAVE TASK 
 function saveStorage() {
-    let userInput = $(this).siblings('.description').val() 
+    let userInput = $(this).siblings('.task-input').val() 
     var localStorageKey = $(this).siblings('.hour').text()
     localStorage.setItem(localStorageKey, userInput)
-    
+    console.log("saveStorage");
+    console.log(this);
  }
 
-
-// let taskEl = document.querySelector('#task');
-// let saveBtnEl = document.querySelector('saveBtn');
-
-// $(".saveBtn").click(function() {
-
-//     taskEl.addEventListener('input', letter => {
-//         console.log(letter.target.value)
-//         textEl.textContent = letter.target.value    
-//     }
-     
-//     )
-
-
-//     //localStorage.setItem("taskInput", JSON.stringify.("#task");
-//     //console.log(localStorage)
-
-//     let taskSaved = localStorage.getItem(taskEL);
-//     localStorage.setItem(taskSaved, 'saved');
-//     console.log(taskSaved);
-//     alert("this has been saved!");
-//   });
-
-// let taskEL = document.querySelector('#task');
-// localStorage.setItem(taskEL, 'taskInput');
-
-// let taskSaved = localStorage.getItem(taskEL);
-// localStorage.setItem(taskSaved, 'saved');
-// console.log(taskSaved);
+// function saveStorage() {
+//     localStorage.setItem("task-input", task-input);
+//     console.log('setItem');
+//     console.log(task-input); 
+//   }
+  
+//   function readValue() {
+//     var x = localStorage.getItem("mytime");
+//     document.getElementById(".task-input").innerHTML = x;
+//   }
 
 
 $(document).ready(function(){
@@ -78,8 +59,8 @@ $(document).ready(function(){
     let hourEl = $('tr');
 
     for (let i = 0; i < currentBlock.length; i++) {
-        console.log(i);
-        console.log(currentBlock.length);
+        // console.log(i);
+        // console.log(currentBlock.length);
         let timeBlock = timeToSeconds(currentBlock[i].innerText);
 
 

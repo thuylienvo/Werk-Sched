@@ -37,3 +37,4 @@ No installation required, to access this application,
  HTML
  CSS
  JavaScript
+ Jquery
