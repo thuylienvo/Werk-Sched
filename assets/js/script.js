@@ -32,7 +32,7 @@ function validateTime(timeEL, currentTime, currentBlock) {
 //SAVE TASK 
 function saveStorage(button) {
     let userInput = $(button).siblings(".task-input").val();
-    var localStorageKey = $(button).siblings("#task-input").attr("id");
+    var localStorageKey = $(button).siblings(".task-input").attr("id");
   
     localStorage.setItem(localStorageKey, userInput);
     console.log("saveStorage");
